@@ -1,0 +1,1 @@
+Verificar año bisiesto: Pide al usuario que ingrese un año y verifica si es un año bisiesto. Un año es bisiesto si es divisible por 4 pero no por 100, o si es divisible por 400.

@@ -1,0 +1,1 @@
+Categorizar números Solicita al usuario un número entero y muestra un mensaje indicando si es positivo, negativo o cero.

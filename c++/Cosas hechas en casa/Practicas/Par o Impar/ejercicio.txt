@@ -1,0 +1,1 @@
+Número par o impar: Pide al usuario que ingrese un número entero y muestra un mensaje indicando si es par o impar.
