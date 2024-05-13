@@ -1,0 +1,1 @@
+Descuento por cantidad: Solicita al usuario la cantidad de un producto comprado y el precio unitario. Si la cantidad es mayor o igual a 10, aplica un descuento del 10%; de lo contrario, no aplica descuento.

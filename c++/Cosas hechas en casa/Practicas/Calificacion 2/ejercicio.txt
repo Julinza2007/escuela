@@ -1,0 +1,6 @@
+Calificación: Pide al usuario ingresar una calificación y muestra un mensaje según la calificación:
+
+Si es mayor o igual a 90, mostrar "Excelente".
+Si está entre 80 y 89, mostrar "Bueno".
+Si está entre 70 y 79, mostrar "Aprobado".
+Si está por debajo de 70, mostrar "Reprobado".

@@ -1,0 +1,1 @@
+Calculadora básica: Pide al usuario ingresar dos números y una operación (suma, resta, multiplicación o división) y muestra el resultado de la operación.
