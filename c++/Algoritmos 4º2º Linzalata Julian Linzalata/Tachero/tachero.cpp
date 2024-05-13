@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define base 1000
-float kilometraje, valor, total;
+float kilometraje, total;
 main(){
 	
 	printf("Por favor indique distancia en kilometros: ");
@@ -10,10 +10,18 @@ main(){
 	{
 	total= (kilometraje / 0.5) * 350;		
 }
+
 else if (kilometraje <= 12)
 	{
-	total=(kilometraje / 0.5) * 250 + (6 / 0.5) * 350;		
+	total= (6 / 0.5) * 350 + ((kilometraje - 6) / 0.5) * 250;		
 }
+
+else if (kilometraje > 12){
+	
+ total= (kilometraje - 12) * 250 + (6 / 0.5) * 250 + (6 / 0.5) * 350;
+
+}
+
 total= total + base;
 
 	printf("La cantidad de kilometraje que usted esta haciendo es de %f km \n", kilometraje);
