@@ -1,6 +1,10 @@
 body{
     background-color: gray;
 }
+h1{
+    text-align:center;
+    padding-top: 20px;
+}
 
 table, th, td{
     margin: 0 auto;
@@ -28,6 +32,6 @@ table, th, td{
     font-size:22px;
     background-color: gold;
     border-radius:5px;
-    box-shadow: 3px 3px 5px darkblue ;
+    box-shadow: 5px 5px 7px darkblue ;
 
 }
