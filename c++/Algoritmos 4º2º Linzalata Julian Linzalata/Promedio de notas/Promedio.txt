@@ -1,0 +1,1 @@
+realizar un programa que lea 3 notas e imprima el promedio; Modificar el programa para mostrar cuantas de estas notas están aprobadas. mostrar porcentajes de evaluaciones desaprobradas.
