@@ -1,0 +1,5 @@
+Una zapatería pone en promoción sus productos, otorgando  un descuento del 10% a las compras mayores de 100.000$.
+Un 25% a las mayores de 200.000$.
+Y un 30% a las mayores de 300.000$.
+Más un descuento extra del 5% si el cliente está registrado.
+Informar el descuento, el total a pagar y el valor por cuotas si se decidiera pagar en cuotas.

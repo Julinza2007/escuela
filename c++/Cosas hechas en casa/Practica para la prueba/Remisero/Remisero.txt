@@ -1,0 +1,5 @@
+Un remis cobra 1000$ de base por cada viaje que realiza.
+Del km 0 a 6 cobra 350$ los 500 métros.
+Desde el km 6 y hasta el 12 cobra 250$ los 500 métros.
+A partir del km 12 cobra 250$ el kilómetro.
+Realizar un programa que lea la cantidad de kilómetros de un viaje y que imprima el total a pagar.
