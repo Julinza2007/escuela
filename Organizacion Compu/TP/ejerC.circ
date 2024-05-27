@@ -53,20 +53,53 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(560,340)" to="(580,340)"/>
-    <wire from="(470,330)" to="(510,330)"/>
-    <wire from="(470,350)" to="(510,350)"/>
-    <comp lib="0" loc="(470,330)" name="Pin"/>
-    <comp lib="0" loc="(470,350)" name="Pin"/>
-    <comp lib="1" loc="(560,340)" name="AND Gate"/>
-    <comp lib="5" loc="(580,340)" name="LED"/>
-    <comp lib="6" loc="(437,336)" name="Text">
-      <a name="text" val="X"/>
-      <a name="font" val="SansSerif bold 12"/>
+    <wire from="(210,130)" to="(210,260)"/>
+    <wire from="(320,180)" to="(410,180)"/>
+    <wire from="(410,230)" to="(440,230)"/>
+    <wire from="(410,250)" to="(440,250)"/>
+    <wire from="(320,300)" to="(340,300)"/>
+    <wire from="(90,130)" to="(90,170)"/>
+    <wire from="(150,190)" to="(270,190)"/>
+    <wire from="(150,310)" to="(270,310)"/>
+    <wire from="(390,280)" to="(410,280)"/>
+    <wire from="(90,290)" to="(240,290)"/>
+    <wire from="(90,170)" to="(270,170)"/>
+    <wire from="(490,240)" to="(500,240)"/>
+    <wire from="(90,290)" to="(90,340)"/>
+    <wire from="(210,260)" to="(210,340)"/>
+    <wire from="(140,130)" to="(150,130)"/>
+    <wire from="(410,180)" to="(410,230)"/>
+    <wire from="(200,130)" to="(210,130)"/>
+    <wire from="(80,130)" to="(90,130)"/>
+    <wire from="(410,250)" to="(410,280)"/>
+    <wire from="(90,170)" to="(90,290)"/>
+    <wire from="(150,190)" to="(150,310)"/>
+    <wire from="(150,310)" to="(150,340)"/>
+    <wire from="(210,260)" to="(340,260)"/>
+    <wire from="(150,130)" to="(150,190)"/>
+    <comp lib="0" loc="(200,130)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="6" loc="(436,354)" name="Text">
+    <comp lib="1" loc="(270,290)" name="NOT Gate"/>
+    <comp lib="5" loc="(500,240)" name="LED"/>
+    <comp lib="1" loc="(390,280)" name="AND Gate"/>
+    <comp lib="0" loc="(140,130)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(490,240)" name="OR Gate"/>
+    <comp lib="1" loc="(320,300)" name="OR Gate"/>
+    <comp lib="0" loc="(80,130)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="6" loc="(70,109)" name="Text">
+      <a name="text" val="X"/>
+    </comp>
+    <comp lib="1" loc="(320,180)" name="AND Gate"/>
+    <comp lib="6" loc="(130,110)" name="Text">
       <a name="text" val="Y"/>
-      <a name="font" val="SansSerif bold 12"/>
+    </comp>
+    <comp lib="6" loc="(193,109)" name="Text">
+      <a name="text" val="Z"/>
     </comp>
   </circuit>
 </project>
