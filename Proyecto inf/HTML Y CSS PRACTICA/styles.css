@@ -182,6 +182,7 @@ form > p {
 form > p > label {
     text-shadow: 2px 2px 5px gray;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 #formulario{
@@ -189,4 +190,32 @@ form > p > label {
     border:10px ridge black;
     padding-left:5px;
  
+}
+
+p.veintitres{
+    font-size:25px;
+}
+
+nav#imgNav{
+background-image: url(https://img.freepik.com/vector-gratis/fondo-semitono-abstracto_23-2148576312.jpg);
+background-size: cover;
+height:260px;
+width: 400px;
+margin: 0 auto;
+border-radius: 10px;
+}
+
+nav#imgNav > ul > li{
+    margin-top:10px;
+    margin-left: 70px;
+}
+
+nav#imgNav > ul > li > a{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+nav#imgNav > ul > li > a:hover{
+    transform: scale(1.1);
+    background-color: red;
 }
