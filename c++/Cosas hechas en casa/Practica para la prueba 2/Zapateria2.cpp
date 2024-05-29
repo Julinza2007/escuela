@@ -6,50 +6,44 @@
 // Informar el descuento, el total a pagar y el valor por cuotas si se decidiera pagar en cuotas.
 
 int cliente, cuotas;
-float producto, descuento, descuento_client, monto_cuo, monto_total;
+float producto, descuento, descuento_client, monto_cuo, monto_final;
 
 main(){
-	printf("Si usted es cliente registrado, marque el numero 1.\nSi no es el caso marque cualquier otro numero:\n");
+	printf("Si usted es cliente registrado marque el numero 1\nEn caso contrario marque cualquier otro numero:\n");
 	scanf("%d", &cliente);
-	printf("Ingrese el precio del producto que se va a llevar: ");
+	printf("Ingrese el precio del producto a comprar: ");
 	scanf("%f", &producto);
-	printf("Elija la cantidad de cuotas que desea realizar el pago: ");
+	printf("Ingrese la cantidad de cuotas que quiere hacer el pago: ");
 	scanf("%d", &cuotas);
-
-if(producto < 200000){
-	if(producto >= 100000){
-		descuento = producto * 0.1;
-	}
-}
-
-else if(producto < 300000){
-	if(producto >= 200000){
-		descuento = producto * 0.25;
-	}
-}
-
-else if(producto >= 300000){
-	descuento = producto * 0.3;
-}
-
-monto_total = producto - descuento;
-
-if(cliente == 1){
-	descuento_client = producto * 0.05;
-	monto_total = monto_total - descuento_client;
-}
-
- 
-   monto_cuo = monto_total / cuotas;
-                                   
-printf("Su monto total a pagar es de: %f", monto_total);
-if(cliente == 1){
-	printf("\nSu descuento por ser cliente es del 5 porciento y equivale a: %f", descuento_client);
-}
-printf("\nSu descuento es de: %f", descuento);
-printf("\nLa cantidad de cuotas que usted eligio es de: %d", cuotas);
-printf("\nEl monto a pagar de cada cuota es de: %f", monto_cuo);
-
-
 	
+	if(producto < 200000){
+		if(producto >= 100000){
+			descuento = producto * 0.1;
+		}
+	}
+	
+	else if(producto < 300000){
+		if(producto >= 200000){
+			descuento = producto * 0.25;
+		}
+	}
+	
+	else if(producto >= 300000){
+		descuento = producto * 0.3;
+	}
+	
+	monto_final = producto - descuento;
+	
+		if (cliente == 1){
+		descuento_client = producto * 0.05;
+		monto_final = monto_final - descuento_client;
+		printf("\nUsted es cliente registrado y se le aplica un descuento del 5 porciento que equivale a: %f", descuento_client);
+	}
+	
+	monto_cuo = monto_final / cuotas;
+	
+	printf("\nSu descuento es de: %f", descuento);
+	printf("\nEl monto total a pagar es de: %f", monto_final);
+	printf("\nLa cantidad de cuotas que usted eligio es de: %d", cuotas);
+	printf("\nEl monto de cada cuota es de: %f", monto_cuo);
 }
