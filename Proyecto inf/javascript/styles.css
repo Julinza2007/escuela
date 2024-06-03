@@ -1,0 +1,12 @@
+body > * {
+    text-align: center;
+}
+
+div#clock{
+    font-size: 90px;
+    background-color: blueviolet;
+    margin: 0px 475px 0px 475px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
