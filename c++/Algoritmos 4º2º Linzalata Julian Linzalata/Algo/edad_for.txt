@@ -1,0 +1,5 @@
+Realizar un programa que lea las edades de 10 personas, e indique:
+1. Porcentaje de mayores de edad.
+2. Cantidad de mayores de 60 años.
+3. Promedio de los menores de edad.
+
