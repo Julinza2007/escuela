@@ -1,0 +1,6 @@
+create database ventas;
+CREAR BASE DE DATOS EN EL SHELL: 
+1. 	mysql -u root -p ---> (-p) entré al servidor de la base de datos.
+2. 	create database ventas; -----> use [nombre]; (activa la base de datos o cambio con la que quiero interactuar)
+3. (A la hora de crear una base de datos siempre la primera tabla que se crea es la que no tiene dependencias).
+	create table clientes (cod_cli int (4) not null, nombre varchar (30) not null, apellido varchar (30) not null, domicilio varchar (50) not null, telefono int (10), primary key (cod_cli)); ----> el auto_increment ennumera solo para PK y si es el int. Antes del parentesis final no hay "comas"
