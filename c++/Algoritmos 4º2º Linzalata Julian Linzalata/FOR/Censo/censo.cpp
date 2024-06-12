@@ -22,8 +22,8 @@ main(){
 	
 	if(opc_genero == 0){
 		cont_varon = cont_varon + 1;
-		
-		if(i==0 || edad > varon_edad_max){
+		/*Cuando pide una edad maxima o minima de un genero en especifico se debe poner el contador de varones en 1*/
+		if(cont_varon=1 || edad > varon_edad_max){
 			varon_edad_max=edad;
 		}
 		
@@ -49,6 +49,15 @@ main(){
 	
 	if (i == 0 || edad > edad_max){
 		edad_max=edad;
+		
+		/*No hace falta poner esos if.
+		Se puede poner así:
+		
+		if(i == 0 || edad > edad_max){
+		edad_max = edad;
+		max_gen = opc_genero;
+		}*/
+		
 		if(opc_genero == 0){
 			max_gen=0;
 		}
