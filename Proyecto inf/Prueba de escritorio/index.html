@@ -33,6 +33,7 @@
             <td class="valor">10200$</td>
         </tr>
       </table>
+
       <table>
         <h1>ZAPATERIA</h1>
         <div class="columna">
@@ -74,5 +75,163 @@
         </tr>
       </table>
     
+      <table>
+        <h1>CENSO (FOR)</h1>
+        <div class="columna">
+        <tr>
+            <th>Entrada</th>
+            <th>Proceso</th>
+            <th>Salida</th>
+        </tr>
+        </div>
+        <!-- Iteración 1 -->
+        <tr>
+            <td class="valor">edad = 25<br>opc_genero = 1</td>
+            <td style="text-align:center;">
+                <span class="proceso">i = 0</span><br>
+                <span class="proceso">if(opc_genero == 0) -> falso</span><br>
+                <span class="proceso">if(edad >= 18) -> verdadero</span><br>
+                <span class="proceso">cont_total_mayor = 1</span><br>
+                <span class="proceso">if(opc_genero == 1) -> verdadero</span><br>
+                <span class="proceso">cont_muj_mayor = 1</span><br>
+                <span class="proceso">cont_muj = 1</span><br>
+                <span class="proceso">acum_muj_edad = 25</span><br>
+                <span class="proceso">if (i == 0 || edad > edad_max) -> verdadero</span><br>
+                <span class="proceso">edad_max = 25</span><br>
+                <span class="proceso">max_gen = 1</span>
+            </td>
+            <td class="valor">
+                cont_varon = 0<br>
+                cont_varon_menor = 0<br>
+                cont_muj_mayor = 1<br>
+                cont_total_mayor = 1<br>
+                cont_muj = 1<br>
+                acum_muj_edad = 25<br>
+                cont_nobin = 0<br>
+                edad_max = 25<br>
+                max_gen = 1<br>
+                varon_edad_max = 0
+            </td>
+        </tr>
+        <!-- Iteración 2 -->
+        <tr>
+            <td class="valor">edad = 17<br>opc_genero = 0</td>
+            <td style="text-align:center;">
+                i = 1<br>
+                if(opc_genero == 0) -> verdadero<br>
+                cont_varon = 1<br>
+                if(i == 0 || edad > varon_edad_max) -> verdadero<br>
+                varon_edad_max = 17<br>
+                if(edad < 18) -> verdadero<br>
+                cont_varon_menor = 1<br>
+                if(edad >= 18) -> falso<br>
+                if(opc_genero == 2) -> falso<br>
+                else if(opc_genero == 1) -> falso<br>
+                if (i == 0 || edad > edad_max) -> falso
+            </td>
+            <td class="valor">
+                cont_varon = 1<br>
+                cont_varon_menor = 1<br>
+                cont_muj_mayor = 1<br>
+                cont_total_mayor = 1<br>
+                cont_muj = 1<br>
+                acum_muj_edad = 25<br>
+                cont_nobin = 0<br>
+                edad_max = 25<br>
+                max_gen = 1<br>
+                varon_edad_max = 17
+            </td>
+        </tr>
+        <!-- Iteración 3 -->
+        <tr>
+            <td class="valor">edad = 30<br>opc_genero = 2</td>
+            <td style="text-align:center;">
+                i = 2<br>
+                if(opc_genero == 0) -> falso<br>
+                if(edad >= 18) -> verdadero<br>
+                cont_total_mayor = 2<br>
+                if(opc_genero == 1) -> falso<br>
+                if(opc_genero == 2) -> verdadero<br>
+                cont_nobin = 1<br>
+                if (i == 0 || edad > edad_max) -> verdadero<br>
+                edad_max = 30<br>
+                max_gen = 2
+            </td>
+            <td class="valor">
+                cont_varon = 1<br>
+                cont_varon_menor = 1<br>
+                cont_muj_mayor = 1<br>
+                cont_total_mayor = 2<br>
+                cont_muj = 1<br>
+                acum_muj_edad = 25<br>
+                cont_nobin = 1<br>
+                edad_max = 30<br>
+                max_gen = 2<br>
+                varon_edad_max = 17
+            </td>
+        </tr>
+        <!-- Iteración 4 -->
+        <tr>
+            <td class="valor">edad = 19<br>opc_genero = 1</td>
+            <td style="text-align:center;">
+                i = 3<br>
+                if(opc_genero == 0) -> falso<br>
+                if(edad >= 18) -> verdadero<br>
+                cont_total_mayor = 3<br>
+                if(opc_genero == 1) -> verdadero<br>
+                cont_muj_mayor = 2<br>
+                cont_muj = 2<br>
+                acum_muj_edad = 44<br>
+                if (i == 0 || edad > edad_max) -> falso
+            </td>
+            <td class="valor">
+                cont_varon = 1<br>
+                cont_varon_menor = 1<br>
+                cont_muj_mayor = 2<br>
+                cont_total_mayor = 3<br>
+                cont_muj = 2<br>
+                acum_muj_edad = 44<br>
+                cont_nobin = 1<br>
+                edad_max = 30<br>
+                max_gen = 2<br>
+                varon_edad_max = 17
+            </td>
+        </tr>
+        <!-- Iteración 5 -->
+        <tr>
+            <td class="valor">edad = 15<br>opc_genero = 0</td>
+            <td style="text-align:center;">
+                i = 4<br>
+                if(opc_genero == 0) -> verdadero<br>
+                cont_varon = 2<br>
+                if(i == 0 || edad > varon_edad_max) -> falso<br>
+                if(edad &lt 18) -> verdadero<br>
+                cont_varon_menor = 2<br>
+                if(edad >= 18) -> falso<br>
+                if(opc_genero == 2) -> falso<br>
+                else if(opc_genero == 1) -> falso<br>
+                if (i == 0 || edad > edad_max) -> falso
+            </td>
+            <td class="valor">
+                cont_varon = 2<br>
+                cont_varon_menor = 2<br>
+                cont_muj_mayor = 2<br>
+                cont_total_mayor = 3<br>
+                cont_muj = 2<br>
+                acum_muj_edad = 44<br>
+                cont_nobin = 1<br>
+                edad_max = 30<br>
+                max_gen = 2<br>
+                varon_edad_max = 17
+            </td>
+        </tr>
+        <!-- Añade más filas de iteraciones similares según sea necesario -->
+    </table>
+
+
+
+
+
+
 </body>
 </html>
