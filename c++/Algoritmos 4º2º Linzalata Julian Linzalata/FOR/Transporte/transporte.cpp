@@ -4,7 +4,8 @@ Informar:
 2. Porcentaje de las personas que solo estudian.
 3. Promedio de gastos de las personas que estudian y trabajan.
 4. Gasto máximo y mínimo y que actividad realizan.
-5. Porcentaje dentro de los que gastan más de $1000 pesos, que solo estudian.*/
+5. Porcentaje dentro de los que gastan más de $1000 pesos, que solo estudian.
+*/
 
 #include <stdio.h>
 int i, N=3, opcion, /*4*/opc_max, /*4*/opc_min; 
