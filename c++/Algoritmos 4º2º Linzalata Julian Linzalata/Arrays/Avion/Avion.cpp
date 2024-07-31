@@ -9,7 +9,7 @@ Informar:
 */
 
 #include <stdio.h>
-float cont_jubi=0, porc_jubi=0, acum_edad=0, prom_edad=0;
+float cont_jubi=0, porc_jubi=0, acum_edad=0, prom_edad=0, encontrado=0;
 int edad[10], i, i_busc, N=10, edad_min, edad_max, min, max, edad_busc;
 main(){
 	printf("Programa:\n");
@@ -39,16 +39,16 @@ main(){
 	
 	porc_jubi = (cont_jubi * 100) / N;
 	
-	
 	prom_edad = acum_edad / N;
 	
 	printf("\n\nEl porcentaje de jubilados es de: %f", porc_jubi);
 	printf("\n\nEl promedio de edad es igual a %f\n", prom_edad);
 	printf("\n\n\nMenores de edad al promedio:\n");
+	
 	for(i=0; i < N; i++){
 		
 		if(edad[i] < prom_edad){
-			printf("\n Persona |%d|, Edad |%d| ", i + 1, edad[i]);
+			printf("\n Persona |%d|, Edad |%d| ", i, edad[i]);
 		}
 		
 	}
@@ -67,10 +67,27 @@ main(){
 		}	
 		
 	}
+	
+	for(i=0; i < N;){
+		if(edad_busc == edad[i]){
+		encontrado = 1;
+		}
+	}
+
+	if(encontrado == 1){
+		printf("La edad que usted busca corresponde a la posicion de memoria numero %d", i_busc);
+	}
+	else{
+		printf("\nNo se encontro ninguna edad correspondiente a lo ingresado.");
+	}
+	
+	
+	/* ESTÁ MAL ESTO
 		if(edad_busc == edad[i]){
 		printf("La edad que usted busca corresponde a la posicion de memoria numero %d", i_busc);
 		}
 		else{
 		printf("\nNo se encontro ninguna edad correspondiente a lo ingresado.");
 		}
+		*/
 }

@@ -47,13 +47,14 @@ main(){
 	}
 	printf("\n\n|El porcentaje de los paises que obtuvieron mas de 30 puntos es de: %f|\n", porcMas30);
 
-//for(J=1; J < N; J++){
-	for(i=0; i < (N-J); i++){
+for(J=1; J < N; J++){
+	for(i=0; i < N-J; i++){
 		if(pais[i] > pais[i + 1]){
 			aux = pais[i];
 			pais[i] = pais[i + 1];
 			pais[i + 1] = aux;
 		}
+}
 }
 printf("Posiciones de menor a mayor:\n");
 	for(i=0; i < N; i++){
