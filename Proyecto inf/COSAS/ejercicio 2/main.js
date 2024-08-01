@@ -9,6 +9,6 @@ function handleSubmit(event){
 }
 addEventListener('click', handleClick);
 function handleClick(){
-    document.querySelector('#chano img').style.display;
+    document.querySelector('#chano img').style.display = ``;
 }
 

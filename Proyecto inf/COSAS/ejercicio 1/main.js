@@ -1,4 +1,3 @@
-let keysDown = {};
 document.addEventListener('click' /*<--- Eso es una forma de entrada*/,  handleClick); // Para que el programa escuche el click vinculando el click con la funciíon handleClick
 function handleClick(event){
     if (event.target.textContent == 'Azul')
