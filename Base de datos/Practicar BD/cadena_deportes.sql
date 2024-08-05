@@ -13,6 +13,17 @@ create table clientes(
     primary key (cod_cli)
 );
 
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| cod_cli   | int(4)      | NO   | PRI | NULL    |       |
+| dni       | int(8)      | NO   |     | NULL    |       |
+| nombre    | varchar(30) | NO   |     | NULL    |       |
+| ciudad    | varchar(30) | NO   |     | NULL    |       |
+| fecha_nac | date        | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+
+
 create table fabricas(
     cuit int (11) not null,
     nombre varchar (30) not null,
@@ -22,6 +33,17 @@ create table fabricas(
     primary key (cuit)
 );
 
++----------------+-------------+------+-----+---------+-------+
+| Field          | Type        | Null | Key | Default | Extra |
++----------------+-------------+------+-----+---------+-------+
+| cuit           | int(11)     | NO   | PRI | NULL    |       |
+| nombre         | varchar(30) | NO   |     | NULL    |       |
+| pais           | varchar(30) | NO   |     | NULL    |       |
+| nomb_gerente   | varchar(30) | NO   |     | NULL    |       |
+| cant_empleados | int(3)      | NO   |     | NULL    |       |
++----------------+-------------+------+-----+---------+-------+
+
+
 create table sucursal(
     num_unico int (4) not null,
     calle varchar (30) not null,
@@ -29,6 +51,17 @@ create table sucursal(
     ciudad varchar (30) not null,
     primary key (num_unico)
     );
+    
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| num_unico | int(4)      | NO   | PRI | NULL    |       |
+| calle     | varchar(30) | NO   |     | NULL    |       |
+| numero    | int(4)      | NO   |     | NULL    |       |
+| ciudad    | varchar(30) | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+
+
 
 create table empleados(
     legajo int (4) not null,
@@ -41,6 +74,20 @@ create table empleados(
     primary key (legajo)
 );
 
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| legajo   | int(4)      | NO   | PRI | NULL    |       |
+| nombre   | varchar(30) | NO   |     | NULL    |       |
+| dni      | int(8)      | NO   |     | NULL    |       |
+| telefono | int(10)     | NO   |     | NULL    |       |
+| calle    | varchar(30) | NO   |     | NULL    |       |
+| numero   | int(4)      | NO   |     | NULL    |       |
+| ciudad   | varchar(30) | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+
+
 create table productos(
     cod_prod int (4) not null,
     cuit_fabrica int (11) not null,
@@ -51,6 +98,18 @@ create table productos(
     foreign key (cuit_fabrica) references fabricas (cuit)
 );
 
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| cod_prod      | int(4)      | NO   | PRI | NULL    |       |
+| cuit_fabrica  | int(11)     | NO   | MUL | NULL    |       |
+| descripcion   | varchar(30) | NO   |     | NULL    |       |
+| color         | varchar(30) | NO   |     | NULL    |       |
+| costo_fabrica | int(5)      | NO   |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+
+
+
 create table producto_sucursal(
     id int (4) not null,
     cod_prod int (4) not null,
@@ -60,6 +119,17 @@ create table producto_sucursal(
     foreign key (cod_prod) references productos (cod_prod),
     foreign key (num_unico) references sucursal (num_unico)
 );
+
++-----------------+--------+------+-----+---------+-------+
+| Field           | Type   | Null | Key | Default | Extra |
++-----------------+--------+------+-----+---------+-------+
+| id              | int(4) | NO   | PRI | NULL    |       |
+| cod_prod        | int(4) | NO   | MUL | NULL    |       |
+| num_unico       | int(4) | NO   | MUL | NULL    |       |
+| precio_sucursal | int(5) | NO   |     | NULL    |       |
++-----------------+--------+------+-----+---------+-------+
+
+
 
 create table empleado_sucursal(
     id int (4) not null,
@@ -72,6 +142,18 @@ create table empleado_sucursal(
     foreign key (num_unico) references sucursal (num_unico)
 );
 
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| id        | int(4)      | NO   | PRI | NULL    |       |
+| legajo    | int(4)      | NO   | MUL | NULL    |       |
+| num_unico | int(4)      | NO   | MUL | NULL    |       |
+| fecha     | date        | NO   |     | NULL    |       |
+| horario   | varchar(20) | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+
+
+
 create table tarjetas(
     num int (16) not null,
     nomb_tarjeta varchar (15) not null,
@@ -81,3 +163,13 @@ create table tarjetas(
     primary key (num, nomb_tarjeta),
     foreign key (cod_cli) references clientes (cod_cli)
 );
+
++-------------------+-------------+------+-----+---------+-------+
+| Field             | Type        | Null | Key | Default | Extra |
++-------------------+-------------+------+-----+---------+-------+
+| num               | int(16)     | NO   | PRI | NULL    |       |
+| nomb_tarjeta      | varchar(15) | NO   | PRI | NULL    |       |
+| cod_cli           | int(4)      | NO   | MUL | NULL    |       |
+| fecha_vencimiento | date        | NO   |     | NULL    |       |
+| cod_seguridad     | int(4)      | NO   |     | NULL    |       |
++-------------------+-------------+------+-----+---------+-------+
