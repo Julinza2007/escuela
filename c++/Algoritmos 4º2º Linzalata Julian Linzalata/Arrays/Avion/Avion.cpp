@@ -68,9 +68,10 @@ main(){
 		
 	}
 	
-	for(i=0; i < N;){
+	for(i=0; i < N; i++){
 		if(edad_busc == edad[i]){
 		encontrado = 1;
+		i_busc = i + 1;
 		}
 	}
 

@@ -6,7 +6,6 @@ El numero de pais corresponde a la posicion de memoria. Informar:
 2. Paises cuyo puntaje supero al del promedio.
 3. Porcentaje de los paises que obtuvieron mas de 30 puntos.
 4. Ordenar el vector de menor a mayor.
-
 */
 
 #include <stdio.h>
