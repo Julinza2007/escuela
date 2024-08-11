@@ -60,14 +60,7 @@ main(){
 	
 	printf("\n\nIngrese la edad que desea buscar: ");
 	scanf("%d", &edad_busc);
-	
-	for(i=0; i < N; i++){
-		if(edad_busc == edad[i]){
-			i_busc = i + 1;	
-		}	
 		
-	}
-	
 	for(i=0; i < N; i++){
 		if(edad_busc == edad[i]){
 		encontrado = 1;

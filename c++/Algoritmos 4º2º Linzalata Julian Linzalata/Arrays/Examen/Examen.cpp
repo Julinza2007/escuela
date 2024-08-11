@@ -59,7 +59,7 @@ main(){
 	}
 	
 	for(J=1; J < N; J++){
-		for(i=0; i < N-J; J++){
+		for(i=0; i < N-J; i++){
 			if(nota[i] > nota[i + 1]){
 				aux = nota[i];
 				nota[i] = nota[i + 1];
