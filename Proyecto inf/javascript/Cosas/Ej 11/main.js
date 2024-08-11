@@ -70,7 +70,7 @@ function anterior(event){
     });
     contador();
 }
-
+//hola
 fetch(`https://rickandmortyapi.com/api/character?page=${pagina}`)
 .then(res => res.json())
 .then(data => {
