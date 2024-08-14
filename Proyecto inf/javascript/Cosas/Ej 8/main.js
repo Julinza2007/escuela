@@ -1,7 +1,7 @@
    let color= ['red','blue','yellow','green','purple','pink','grey','black','brown'];
 
    function numRandom(){
-    return Math.floor(Math.random() * 900);
+    return Math.floor(Math.random() * 60);
    }
 
    function colorRandom(){
@@ -32,9 +32,9 @@
       if(rightOrleft() == 1) circulo.style.left = `${numRandom()}px`;
       else if(rightOrleft() == 2) circulo.style.right = `${numRandom()}px`;      
       document.body.append(circulo);
-      setTimeout(() => circulo.remove(), 1000);
+      setTimeout(() => circulo.remove(), 200);
     }
-    setInterval(bubble, 1000);
+    setInterval(bubble, 200);
     
 
 
