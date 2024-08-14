@@ -36,7 +36,7 @@ function desplegar(event){
         let saludo= document.createElement('p');
         menu.append(saludo);
         saludoA = document.createElement('a');
-        saludoA.href = '#';
+        saludoA.href = 'https://julinza2007.github.io/biograf-a/';
         saludoA.textContent = '?';
         saludo.style.textAlign = 'center';
         saludo.append(saludoA);
