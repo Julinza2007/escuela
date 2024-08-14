@@ -1,0 +1,38 @@
+p#ej{
+    font-family: sans-serif;
+    background-color: aqua;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid;
+    padding: 5px;
+}
+
+table.table{
+    border-collapse: collapse;
+    border: 3px solid;
+    border-color: black;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+table.table td{
+    font-family: sans-serif;
+    border: 3px solid;
+    border-color: black;
+    padding: 5px;
+}
+
+table.table2{
+    border-collapse: collapse;
+    border: 3px solid;
+    border-color: black;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+table.table2 td{
+    font-family: sans-serif;
+    border: 3px solid;
+    border-color: black;
+    padding: 5px;
+}
