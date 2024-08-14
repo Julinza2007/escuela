@@ -1,8 +1,9 @@
 /*
 Realizar un programa que calcule el promedio de 3 notas.
 Hasta que el usuario ingrese cero como nota.
-/*PREGUNTO ANTES DE EJECUTAR EL CICLO = WHILE
-  PREGUNTO DESPUES DE EJECUTAR EL CICLO = DO WHILE.
+/*PREGUNTO ANTES DE EJECUTAR EL CICLO = WHILE (pre-testeo)
+  PREGUNTO DESPUES DE EJECUTAR EL CICLO = DO WHILE (Post-testeo)
+  while(se usa en base de datos muajaja)
 */
 
 #include <stdio.h>

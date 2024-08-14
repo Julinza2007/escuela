@@ -14,8 +14,8 @@ Informar:
 #include <stdio.h>
 float precio, subtotal, total, precio_max, precio_cantMax, desc, acumDesc, totalDesc, descApli, totalDescApli, monto_finalDesc;
 int i=0, preg=0, cantidad, acumCant=0, cant_max;
-main(){	
 
+main(){	
 	
 	do{
 		printf("Ingrese del producto numero %d la cantidad: ", i + 1);
@@ -50,11 +50,6 @@ main(){
 			cant_max = cantidad;
 			precio_cantMax = precio;
 		}
-		
-	
-		
-		
-		
 		i++;
 	}
 /*The*/	while /*Proyect*/(preg == 1);

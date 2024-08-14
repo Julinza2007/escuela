@@ -75,7 +75,13 @@ else{
 	prom_desapro = 0;
 }
 porc_123 = (cont_123 * 100) / cont_desapro;
-prom_mas8 = acum_mas8 / cont_mas8;
+
+if(cont_mas8 !=0){
+	prom_mas8 = acum_mas8 / cont_mas8;
+}
+else{
+	prom_mas8 = 0;
+}
 
 
 printf("\n\nEl porcentaje de aprobados es de: %f", porc_apro);
