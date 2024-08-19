@@ -36,11 +36,6 @@ main(){
 			totalDescApli = totalDescApli + descApli;
 			printf("\nEl subtotal acumulado con ese descuento de 20 porciento de ese producto es de: %f, con un descuento de %f.", descApli, desc);
 		}
-				
-		printf("\n\nSi desea seguir ingrese la opcion numero 1.\nSi no ingrese la opcion numero 2.\n");
-		scanf("%d", &preg);
-		
-			
 		
 		if(i==0 || precio > precio_max){
 			precio_max = precio;
@@ -51,8 +46,11 @@ main(){
 			precio_cantMax = precio;
 		}
 		i++;
+		
+		printf("\n\nSi desea seguir ingrese la opcion numero 1.\nSi no ingrese la opcion numero 2.\n");
+		scanf("%d", &preg);
 	}
-/*The*/	while /*Proyect*/(preg == 1);
+	while(preg == 1);
 	monto_finalDesc= total - totalDesc;
 	
 		printf("\n\nEl precio del producto mas caro es de: %f", precio_max);
