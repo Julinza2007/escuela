@@ -7,29 +7,30 @@ Mostrar:
 3.	Promedio de las edades entre todos los censados y promedio de edades masculinos.
 4.	Qué porcentaje de las mujeres son menor a 40 años.
 5.	Entre las personas mayores a 50 años, que porcentaje son varones.
-
 */
 
-
 #include <stdio.h>
+
 float acum=0, promedio, cont_varon=0, porc_var, cont_mujer=0, porc_muj, acumVaron=0, prom_var, cont_mujerMenos40=0, porc_mujerMenos40, cont_mas50=0, cont_varMas50=0, porc_varMas50;   
-int i, N=8, edad, edad_varMenor, edad_mayor, genero;
+int i=0, N=8, edad, edad_varMenor, edad_mayor, genero;
 
 main(){
 	
 	printf("Ingrese de la persona numero %d la edad: ", i + 1);
 	scanf("%d", &edad);
 	
-	while(edad != 0 ){
+	while(edad != 0 && i < N){
 		printf("Ingrese genero de esa persona:\n1. Si es varon.\n2. Si es mujer.\n");
-		scanf("%d", genero);
+		scanf("%d", &genero);
 		
 		acum = acum + edad;
+		
+		i++;
 				
 		if(genero == 1){
 			cont_varon = cont_varon + 1;
 			acumVaron = acumVaron + edad;
-			if(i==0 || edad < edad_varMenor){
+			if(cont_varon == 1 || edad < edad_varMenor){
 				edad_varMenor = edad;
 			}			
 		}
@@ -48,22 +49,56 @@ main(){
 			}
 		}
 		
-		if(i==0 || edad > edad_mayor){
+		if(i == 1 || edad > edad_mayor){
 			edad_mayor = edad_mayor;
 		}		
 		
+		
 	printf("Ingrese de la persona numero %d la edad: ", i + 1);
-	scanf("%d", &edad);
-	
-		i++;
+	scanf("%d", &edad);		
 	}
 	
+	if(i != 0){
 	porc_var = (cont_varon * 100) / i;
+	}
+	else{
+		porc_var = 0;
+	}
+	
+	if(i != 0){
 	porc_muj = (cont_mujer * 100) / i;
+	}
+	else{
+		porc_muj = 0;
+	}
+	
+	if(i != 0){
 	promedio = acum / i;
+	}
+	else{
+		promedio = 0;
+	}
+	
+	if(cont_varon != 0){
 	prom_var = acumVaron / cont_varon;
+	}
+	else{
+	prom_var=0;
+	} 
+	
+	if(cont_mujer != 0){
 	porc_mujerMenos40 = (cont_mujerMenos40 * 100) / cont_mujer;
+	}
+	else{
+		porc_mujerMenos40 = 0;
+	}
+	
+	if(cont_mas50 != 0){
 	porc_varMas50 = (cont_varMas50 * 100) / cont_mas50;
+	}
+	else{
+		porc_varMas50 = 0;
+	}
 	
 	printf("\n\nEl porcentaje de varones es igual a: %f", porc_var);
 	printf("\n\nEl porcentaje de mujeres es igual a: %f", porc_muj);
