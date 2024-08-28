@@ -46,22 +46,27 @@ main(){
 	}
 	
 	if(i != 0){
-	porc_mas3 = (cont_mas3 * 100) / i;
+	porc_mas3 = (cont_mas3 * 100) / (i + 1);
 	}
 	else{
 		porc_mas3 = 0;
 	}
 	
-	if(cont_menos3 ){
+	if(cont_menos3 != 0 ){
 	promedio = acum_menos3 = cont_menos3;	
 	}
 	else{
 	promedio = 0;
 	}
 	
+	if(cont_5 != 0){
 	porc_mas3_con5 = (cont_3_con5 * 100) / cont_5;
+	}
 	
-	printf("\n\nEl porcentaje de los dias en los que las precipitaciones fueron menores a 3 es de: %f", porc_mas3_con5);
+	else{
+		porc_mas3_con5 = 0;
+	}
+	printf("\n\nEl porcentaje de los dias en los que las precipitaciones superaron a 3mm es de: %f", porc_mas3_con5);
 	printf("\n\nEl dia de mas precipitaciones es el dia numero %d", diaMax);
 	printf("\n\nEl promedio entre las precipitaciones menores a 3mm es de: %f", promedio);
 	printf("\n\nEntre los dias en que las precipitaciones son menores a 5mm, las precipitaciones que fueron mayores a 3.5mm es de: %f", porc_mas3_con5);
