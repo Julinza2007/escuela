@@ -19,7 +19,8 @@ main(){
 		scanf("%d", &edad);
 		printf("Indique genero. Si es mujer, 1.\Si es hombre, 2\n");
 		scanf("%d", &genero);
-		
+		printf("Ingrese la opcion del destino, 1, 2 o 3\n");
+		scanf("%d", &opc_dest);
 		 /*VALIDA LA ENTRADA DE DATOS*/while(opc_dest > 3 || opc_dest <= 0){
 		printf("Ingrese la opcion del destino, 1, 2 o 3\n");
 		scanf("%d", &opc_dest);
