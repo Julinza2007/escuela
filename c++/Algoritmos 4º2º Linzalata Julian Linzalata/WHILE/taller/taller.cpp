@@ -1,19 +1,19 @@
 /*
-Se desean procesar los datos de los vehículos que ingresan a un taller durante 5 días.
-Por día mostrar:
+Se desean procesar los datos de los vehÃ­culos que ingresan a un taller durante 5 dÃ­as.
+Por dÃ­a mostrar:
 1.	Porcentaje de autos particulares.
-2.	Valor promedio de la atención a autos comerciales.	
-3.	Costo del service mas barato y a que tipo de vehículo fue.
-4.	Dentro de los servicios que superaron los $200000, ¿cuántos corresponden a particulares? Expresar en porcentaje.
+2.	Valor promedio de la atenciÃ³n a autos comerciales.	
+3.	Costo del service mas barato y a que tipo de vehÃ­culo fue.
+4.	Dentro de los servicios que superaron los $200000, Â¿cuÃ¡ntos corresponden a particulares? Expresar en porcentaje.
 
 Por cada cliente se leen, el precio del servicio y si el auto es particular o comercial. Puede ser que no haya clientes. 
 Entre todos los dias, Mostrar:
-1.	Valores de los services minimos y máximos
+1.	Valores de los services minimos y mÃ¡ximos
 2.	Valor de atencion promedio
 3.	Porcentaje de autos particulares.
-4.  Porcentaje de los dias en los que la facturacion superó los $600000.
+4.  Porcentaje de los dias en los que la facturacion superÃ³ los $600000.
 
-Finaliza la carga del día al ingresar 0 como auto.
+Finaliza la carga del dÃ­a al ingresar 0 como auto.
 */
 
 #include <stdio.h>
@@ -105,6 +105,11 @@ main(){
 	else{
 		porc_mas200000Parti = 0;
 	}
+	
+	
+printf("")
+printf("")
+printf("")
 printf("")
 }
 
