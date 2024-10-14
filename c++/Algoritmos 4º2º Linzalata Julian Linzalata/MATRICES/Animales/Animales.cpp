@@ -24,7 +24,7 @@ main(){
 			if(i == j){
 				acum_traza = acum_traza + animales[i][j];
 			}
-			if(i && j == 0 || animales[i][j] < animales_min){
+			if(i == 0 && j == 0 || animales[i][j] < animales_min){
 				animales_min = animales[i][j];
 				posi_Imin = i + 1;
 				posi_Jmin = j + 1; 
