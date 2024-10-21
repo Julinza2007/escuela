@@ -12,13 +12,19 @@ Mostrar mediante un menu:
 #include <stdio.h>
 int i, j, N=3, opc, ventas[3][3], acum_vendedor, min_vendedor, j_minVendedor,
 acum_dia, max_dia, i_maxDia, j_maxVendXdia, max_vendXdia, max, i_posiMax, j_posiMax, acum_traza;
-float cont_mas20000=0, porc_mas20000; // i dia, vendedor j. 
+float cont_mas20000=0, porc_mas20000; // i dia, vendedor j.
+char vendedor[3][12]; 
 
 
 main(){
+	
+	for(j=0; j < N; j++){
+		printf("Ingrese del vendedor %d el nombre y apelido: ");
+		scanf("%s", &vendedor[j]); 
+	}
 	for(i=0; i < N; i++){
 		for(j=0; j < N; j++){
-			printf("Ingrese del dia %d, el vendedor %d: ", i + 1, j + 1);
+			printf("Ingrese del dia %d, el vendedor %d. %s: ", i + 1, j + 1, vendedor[j]);
 			scanf("%d", &ventas[i][j]);
 		}
 		printf("\n\n");		

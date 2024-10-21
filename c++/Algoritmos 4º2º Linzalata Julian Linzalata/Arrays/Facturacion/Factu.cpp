@@ -8,12 +8,12 @@ Informar:
 5. Si hubo algún día en donde la facturación haya sido $1234. En caso informativo, informar que día fue.
 */
 #include <stdio.h>
-int  i, N=5;
+int i, N=5;
 float facturacion[5], cont_mas3500=0, porc_mas3500=0, acum=0, promedio=0, cont_mayor_prom=0, factu_min=0, dia_factuMin=0, cont_mas10000=0, acum_mas10000=0, promedio_mas10000=0, factu_justo=0; 
 main(){
 	printf("Bienvenido al programa de facturacion de la pizzeria A LA LINZALATA\n");
 	for(i=0; i<N; i++){
-		printf("\nIngrse el valor de la facturacion para el dia numero %d ", i + 1);
+		printf("\nIngrese el valor de la facturacion para el dia numero %d ", i + 1);
 		scanf("%f", &facturacion[i]);
 		
 		if(facturacion[i] > 3500){
