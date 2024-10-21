@@ -60,7 +60,7 @@ do{
 				prom_bim = acum_bim / N;
 				printf("\nEl promedio del bimestre %d es de: %f.", j + 1, prom_bim);
 				printf(" Y el estudiante %d fue el que tuvo mas nota en ese bimestre", i_maxEstuXbim);
-				max_estuXbim=0;
+				max_estuXbim = 0;
 				acum_bim = 0;
 			}
 			
@@ -73,12 +73,12 @@ do{
 						cont_bimApro = cont_bimApro + 1;
 					}
 				}
-			}
-			
-			porc_bimApro = (cont_bimApro * 100) / 16;
-			cont_bimApro = 0;
-			printf("\n\nEl porcentaje de bimestres aprobados es de: %f", porc_bimApro); 
-		
+				porc_bimApro = (cont_bimApro * 100) / N;
+				cont_bimApro = 0;
+				printf("\n\nEl porcentaje de bimestres aprobados en un anio es de: %f",
+				 porc_bimApro); 
+
+			}		
 		
 		break;
 		
