@@ -92,9 +92,9 @@ main(){
 			for(i=0; i < N; i++){
 				for(j=0; j < N; j++){
 					acum_espec = acum_espec + entradas[i][j];
-					if(acum_espec > 200){
+				}
+				if(acum_espec > 200){
 					cont_especMas200 = cont_especMas200 + 1;
-					}
 				}
 				acum_espec=0;
 				porc_espec = (cont_especMas200 * 100) / N; // preguntar a la profe xd.
